@@ -1,0 +1,428 @@
+@media(max-width: 480px) {
+    /* section */
+    .container {
+        width: 100%;
+        height: 100vh;
+    }
+
+    /* container */
+    .car {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        overflow: hidden;
+    }
+
+    /* images */
+    .car .car-img {
+        width: 75%;
+        height: 100px;
+        position: absolute;
+        margin-left: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+    }
+
+    /* image */
+    .car .car-img img {
+        width: 100%;
+    }
+    
+    /* backgrounds */
+    .background {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+
+    /* background switch */
+
+    /* first background */
+    .background1 {
+        background-image: linear-gradient(to right, #bbe2fd, #85a1b6);
+        animation-name: background1;
+        animation-duration: 5s;
+        animation-delay: 2s;
+        animation-play-state: running;
+        animation-fill-mode: both;
+        z-index: 9;
+        opacity: 1;
+    }
+    @keyframes background1 {
+        0% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+
+    /* second background */
+    .background2 {
+        background-image: linear-gradient(to right, #fae8df, #cabeb4);
+        animation-name: background2;
+        animation-duration: 5s;
+        animation-delay: 7s;
+        animation-play-state: running;
+        animation-fill-mode: both;
+        z-index: 8;
+        opacity: 1;
+    }
+    @keyframes background2 {
+        0% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+    
+    /* third background */
+    .background3 {
+        background-image: linear-gradient(to right, #f4e5d9, #ab9f95);
+        animation-name: background3;
+        animation-duration: 5s;
+        animation-delay: 11s;
+        animation-play-state: running;
+        animation-fill-mode: both;
+        z-index: 7;
+        opacity: 1;
+    }
+    @keyframes background3 {
+        0% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+
+    /* forth background */
+    .background4 {
+        background-image: linear-gradient(to right, #a99e95, #51473d);
+    }
+
+    /* numbers */
+    .number {
+        width: 100%;
+        color: #5a92ad;
+        display: flex;
+        justify-content: center;
+        font-size: 50px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        position: absolute;
+        left: 17.5%;
+        top: 40%;
+        transition: 2s;
+        z-index: 9;
+    }
+    .translate-number19, .translate-number4, .translate-number8 {
+        width: 135px;
+        height: 90px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: absolute;
+        bottom: 15%;
+        left: 30%;
+        overflow: hidden;
+        transition: 0.7s;
+    }
+    .translate-number19 {
+        left: 0%;
+        width: 300px;
+    }
+    .translate-number8 {
+        width: 100px;
+        left: 43%;
+    }
+    .translate-number4 {
+        width: 50px;
+        left: 99px;
+        font-size: 75px;
+        z-index: 999999;
+    }
+
+    /* switch numbers color */
+    .number {
+        animation-name: numColor;
+        animation-duration: 15s;
+        animation-delay: 2s;
+        animation-play-state: running;
+        animation-fill-mode: both;
+    }
+    @keyframes numColor {
+        0% {
+            color: #5a92ad;
+        }
+        30% {
+            color: #dac5a2;
+        }
+        40% {
+            color: #dac5a2;
+        }
+        50% {
+            color: #a6a293;
+        }
+        60% {
+            color: #a6a293;
+        }
+        70% {
+            color: #a6a293;
+        }
+        80% {
+            color: #3a3731;
+        }
+        90% {
+            color: #3a3731;
+        }
+        100% {
+            color: #3a3731;
+        }
+    }
+
+    /* switch numbers */
+
+    /* number19 */
+    .number .translate-number19 span {
+        transform: translateY(0);
+        animation-name: number20;
+        animation-duration: 2.5s;
+        animation-delay: 12.3s;
+        animation-fill-mode: both;
+        animation-play-state: running;
+    }
+
+    @keyframes number20 {
+        0% {
+            transform: translateY(-0);
+        }
+        100% {
+            transform: translateY(-88px);
+        }
+    }
+
+    /* number4 */
+    .number .translate-number4 span {
+        transform: translateY(-260px);
+        animation-name: number4;
+        animation-duration: 13s;
+        animation-delay: 2s;
+        animation-fill-mode: both;
+        animation-play-state: running;
+    }
+    @keyframes number4{
+        0% {
+            transform: translateY(-260px);
+        }
+        10% {
+            transform: translateY(-438px);
+        }
+        20% {
+            transform: translateY(-438px);
+        }
+        30% {
+            transform: translateY(-438px);
+        }
+        40% {
+            transform: translateY(-438px);
+        }
+        50% {
+            transform: translateY(-696px);
+        }
+        60% {
+            transform: translateY(-696px);
+        }
+        70% {
+            transform: translateY(-696px);
+        }
+        80% {
+            transform: translateY(-696px);
+        }
+        90% {
+            transform: translateY(-2px);
+        }
+        100% {
+            transform: translateY(-2px);
+        }
+    }
+    
+
+    /* number 8 */
+    .number .translate-number8 span {
+        transform: translateY(-347px);
+        animation-name: number8;
+        animation-duration: 12s;
+        animation-delay: 1.8s;
+        animation-fill-mode: both;
+        animation-play-state: running;
+    }
+    @keyframes number8 {
+        0% {
+            transform: translateY(-347px);
+        }
+        10% {
+            transform: translateY(0px);
+        }
+        40% {
+            transform: translateY(0px);
+        }
+        50% {
+            transform: translateY(-435px);
+        }
+        60% {
+            transform: translateY(-435px);
+        }
+        70% {
+            transform: translateY(-435px);
+        }
+        80% {
+            transform: translateY(-435px);
+        }
+        90% {
+            transform: translateY(-435px);
+        }
+        100% {
+            transform: translateY(-435px);
+        }
+    }
+
+    /* text */
+    .text {
+        position: absolute;
+        bottom: -50px;
+        font-size: 30px;
+        color: white;
+        letter-spacing: 2px;
+        font-weight: 700;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    /* shadow */
+    .car-img .shadow {
+        width: 77%;
+        height: 1px;
+        position: absolute;
+        top: -3%;
+        left: 10px;
+        box-shadow: 20px 100px 5px 10px rgba(0, 0, 0, 0.945);
+        border-radius: 30%;
+        z-index: -1;
+}
+
+    /* switch1 */
+    .car .car1-img {
+        animation-name: car1;
+        animation-duration: 5s;
+        animation-delay: 1.8s;
+        animation-fill-mode: both;
+        animation-play-state: running;
+        z-index: 99;
+    }
+    @keyframes car1 {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-1200px);
+        }
+    }
+
+    /* switch2 */
+    .car .car2-img {
+        animation-name: car2;
+        animation-duration: 18s;
+        animation-delay: 1s;
+        animation-fill-mode: both;
+        animation-play-state: running;
+        z-index: 9;
+    }
+    @keyframes car2 {
+        0% {
+            transform: translateX(900px);
+        }
+        20% {
+            transform: translateX(0px);
+        }
+        30% {
+            transform: translateX(0px);
+        }
+        30% {
+            transform: translateX(0px);
+        }
+        50% {
+            transform: translateX(-700px);
+        }
+        60% {
+            transform: translateX(-700px);
+        }
+        80% {
+            transform: translateX(-700px);
+        }
+        100% {
+            transform: translateX(-1200px);
+        }
+    }
+
+    /* switch3 */
+    .car .car3-img {
+        animation-name: car3;
+        animation-duration: 19s;
+        animation-delay: 5s;
+        animation-fill-mode: both;
+        animation-play-state: running;
+        z-index: 9;
+    }
+    @keyframes car3 {
+        0% {
+            transform: translateX(900px);
+        }
+        20% {
+            transform: translateX(0px);
+        }
+        30% {
+            transform: translateX(0px);
+        }
+        30% {
+            transform: translateX(0px);
+        }
+        50% {
+            transform: translateX(-350px);
+        }
+        60% {
+            transform: translateX(-350px);
+        }
+        80% {
+            transform: translateX(-350px);
+        }
+        100% {
+            transform: translateX(-350px);
+        }
+    }
+
+    /* switch4 */
+    .car .car4-img {
+        animation-name: car4;
+        animation-duration: 5s;
+        animation-delay: 12s;
+        animation-fill-mode: both;
+        animation-play-state: running;
+        z-index: 9;
+    }
+    @keyframes car4 {
+        0% {
+            transform: translateX(600px);
+        }
+        30% {
+            transform: translateX(0px);
+        }
+    }
+
+
+
+
+}
